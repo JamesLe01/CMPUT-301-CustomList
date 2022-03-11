@@ -98,4 +98,13 @@ public class CustomList extends ArrayAdapter<City> {
             }
         }
     }
+
+    /**
+     * Return the number of cities are there currently in the list
+     * @return The number of cities are there currently in the list
+     */
+    public int countCities() {
+        //return cities.size();
+        return -1;
+    }
 }
