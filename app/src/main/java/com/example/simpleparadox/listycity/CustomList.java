@@ -87,7 +87,7 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city The city to be deleted
      */
     public void delete(City city) {
-        /*
+
         if (!hasCity(city)) {
             throw new IllegalArgumentException();
         }
@@ -97,7 +97,5 @@ public class CustomList extends ArrayAdapter<City> {
                 break;
             }
         }
-
-         */
     }
 }
