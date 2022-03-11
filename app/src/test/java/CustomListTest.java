@@ -31,4 +31,11 @@ public class CustomListTest {
         list.addCity(new City("Edmonton", "AB"));
         assertTrue(list.hasCity(new City("Edmonton", "AB")));
     }
+
+    @Test
+    public void deleteCityTest() {
+        list.addCity(new City("Edmonton", "AB"));
+        list.delete(new City("Edmonton", "AB"));
+        assertFalse(list.hasCity(new City("Edmonton", "AB")));
+    }
 }

@@ -65,6 +65,12 @@ public class CustomList extends ArrayAdapter<City> {
         return;
     }
 
+    /**
+     * Search for a city in a list
+     *
+     * @param city The city to be search
+     * @return true if the city is in the list, false otherwise
+     */
     public boolean hasCity(City city) {
         for (int i = 0; i < getCount(); i++) {
             if (cities.get(i).getCityName().equals(city.getCityName()) &&
@@ -73,5 +79,25 @@ public class CustomList extends ArrayAdapter<City> {
             }
         }
         return false;
+    }
+
+    /**
+     * This delete a city from a list (if exists in the list), else throw a RuntimeException
+     *
+     * @param city The city to be deleted
+     */
+    public void delete(City city) {
+        /*
+        if (!hasCity(city)) {
+            throw new IllegalArgumentException();
+        }
+        for (int i = 0; i < cities.size(); i++) {
+            if (cities.get(i).getCityName().equals(city.getCityName())) {
+                cities.remove(i);
+                break;
+            }
+        }
+
+         */
     }
 }
